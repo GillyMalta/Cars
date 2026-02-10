@@ -1,0 +1,49 @@
+#section6 {
+  position: relative;
+  display: block;
+}
+
+.car-image {
+  width: 110%;
+  /* max-width: 600px; */
+  display: block;
+}
+
+/* Hotspot points */
+.hotspot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* background: rgba(255, 0, 0, 0.5); */
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tooltip text */
+.hotspot::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: 100%; /* above the hotspot */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  margin-bottom: 8px; /* space above hotspot */
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+.hotspot:hover::after {
+  opacity: 1;
+}

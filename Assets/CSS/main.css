@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --std_Font_Khand:               'Khand';
+    --std_Font_Bangers:             'Bangers';
+    --std_Font_Chewy:               'Chewy';
+    --std_Font_Luckiest_Guy:        'Luckiest Guy';
+    --std_Font_Poppins:             'Poppins';
+    --std_Font_Lato:                'Lato';
+    --std_Font_Roboto:              'Roboto';
+    --std_Font_Montserrat:          'Montserrat';  
+    --std_Font_Oswald:              'Oswald';
+    --std_Font_Raleway:             'Raleway';
+
+    --std_Font_Weight_100:          100;
+
+    --std_Colour_C2E2ee:            #C2E2EE;
+    --std_Colour_649CBE:            #649CBE;
+    --std_Colour_2E5F7C:            #2E5F7C;
+    --std_Colour_FAFAFA:            #FAFAFA;
+    --std_Colour_F9F9F9:            #F9F9F9;
+    --std_Colour_F7F7F7:            #F7F7F7;
+    --std_Colour_FFFDF8:            #FFFDF8;
+    --std_Colour_FDF6EC:            #FDF6EC;
+    --std_Colour_FAF3E0:            #FAF3E0;
+    --std_Colour_F5F7FA:            #F5F7FA;
+    --std_Colour_F2F4F8:            #F2F4F8;
+    --std_Colour_EEF1F5:            #EEF1F5;
+    --std_Colour_Black:             black;
+    --std_Colour_Royalblue:         royalblue;
+    --std_Colour_Lightgrey:         lightgrey;
+    --std_Colour_Beige:             beige;
+    --std_Colour_E5EDFF:            #E5EDFF;
+    --std_Colour_DC0000:            #DC0000;     
+    
+    --std_Quarter_Rem:              0.25rem;
+    --std_Half_Rem:                 0.5rem;
+    --std_One_Rem:                  1.0rem;
+    --std_OneHalf_Rem:              1.5rem;
+    --std_Two_Rem:                  2.0rem;
+    --std_TwoHalf_Rem:              2.5rem;
+    --std_Three_Rem:                3.0rem;
+    --std_ThreeHalf_Rem:            3.5rem;
+    --std_Four_Rem:                 4.0rem;
+    --std_FourHalf_Rem:             4.5rem;
+    --std_Five_Rem:                 5.0rem;
+    --std_Six_Rem:                  6.0rem;
+    --std_Eight_Rem:                8.0rem;
+    --std_NineHalf_Rem:             9.5rem;
+    --std_Ten_Rem:                  10rem;
+    --std_Fifteen_Rem:              15rem;
+    --std_Nineteen_Rem:             19rem;
+    --std_Twenty_Rem:               20rem;
+    --std_Thirty_Rem:               30rem;
+    --std_ThirtyEight_Rem:          38rem;
+    --std_Forty_Rem:                40rem;
+    --std_FortyOne_Rem:             41rem;
+    --std_FortyThree_Rem:           43rem;
+    --std_Sixtyfive_Rem:            65rem;
+
+    --std_Time_Halfsec:             0.5s;
+    --std_Time_Onesec:              1.0s;
+    --std_Time_Twosec:              2.0s;
+
+    --std_VH_5:                     5vh;
+    --std_VH_10:                    10vh;
+    --std_VH_15:                    15vh;
+    --std_VH_20:                    20vh;
+    --std_VH_30:                    30vh;
+    --std_VH_40:                    40vh;
+    --std_VH_45:                    45vh;
+    --std_VH_46:                    46vh;
+    --std_VH_50:                    50vh;
+
+    --std_Position_Centre:          center;
+    --std_Position_Fixed:           fixed;
+    --std_Position_Sticky:          sticky;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: var(--std_Font_Khand);
+    font-weight: var(--std_Font_Weight_100);
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    position: var(--std_Position_Sticky);
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+}
+
+h2 {
+    grid-column: 1 / -1;
+}
+
+[ID^="section"] {
+    height: 100vh;
+}
+
+#section1 {
+    margin-top: -60px;
+    background-image: url(/Assets/Images/car1.jpg);
+}
+
+#section2 {
+    background-image: url(/Assets/Images/car2.jpg);
+}
+
+#section3 {
+    background-image: url(/Assets/Images/car3.jpg);
+}
+
+#section4 {
+    background-image: url(/Assets/Images/car4.jpg);
+}
+
+#section5 {
+    background-image: url(/Assets/Images/car5.jpg);
+}
+
+#section6 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* #section6 {
+    background-image: url(/Assets/Images/car6.jpg);
+} */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: inherit;
+    z-index: 10%;
+}
+
+.links {
+    align-self: flex-end;
+    padding-bottom: 3rem;
+}
+
+.svg {
+    align-self: flex-end;
+    border: solid black 1px;
+    border-radius: 5rem;
+    opacity: 0.8;
+    transition: ease-in 1s;
+}
+
+/* img {
+    width: 100%;
+} */

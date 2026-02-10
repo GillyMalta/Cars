@@ -1,0 +1,31 @@
+.hover-wrap {
+    position: relative;
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.popup {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    white-space: nowrap;
+    z-index: 20;
+}
+
+.hover-wrap:hover .popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
